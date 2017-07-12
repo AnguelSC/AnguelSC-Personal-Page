@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+body{
+    background: #f2f8fe;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    display: block;
+    height: 60px;
+}
+.header_name{
+    display: block;
+    background: #171f2a;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.header_options{
+    background: #ffffff;
+    height: 60px;
+}
+.header_options > ul{
+    display: block;
+}
+.options{
+    position: absolute;
+    display: block;
+    background: #171f2a;
+    bottom: 0;
+    top: 0;
+    padding-top: 60px;
+    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+}
+.options > .information{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.options > .information > p{
+    margin: 0;
+}
+.options > .information > p:nth-child(1){
+    color: #0081ff;
+    padding-left: 20px;
+}
+.options > .information > p:nth-child(n + 2){
+    font-size: 24px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.options > .information > .photo {
+    margin: 0 auto;
+}
+.options > .information > .photo > img {
+    width: 100%;
+}
+.options > .resumen {
+    margin-top: 10px;
+    padding: 15px;
+    text-align: center;
+    background: #0081ff;
+}
+.options > .resumen > .about{
+    margin: 0 auto;
+    display: inline;
+    background: #10171f;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
