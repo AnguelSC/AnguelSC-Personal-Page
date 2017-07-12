@@ -165,63 +165,65 @@ header{
 }
 .frame{
     display: block;
-    position: relative;
-    color: #fff;
-    height: 60px;
     margin-bottom: 15px;
 }
 .frame-color-a{
     display: block;
     background: #52b36e;
 }
-.frame-color-a > .frame_icon{
+.frame-color-a > .frame_head > .frame_icon{
     background: #2EAB61;
 }
 .frame-color-b{
     display: block;
     background: #35495e;
 }
-.frame-color-b > .frame_icon{
+.frame-color-b > .frame_head > .frame_icon{
     background: #2c3e50;
 }
 .frame-color-c{
     display: block;
     background: #3997d3;
 }
-.frame-color-c > .frame_icon{
+.frame-color-c > .frame_head > .frame_icon{
     background: #2880ba;
 }
 .frame-color-d{
     display: block;
     background: #e84c3c;
 }
-.frame-color-d > .frame_icon{
+.frame-color-d > .frame_head > .frame_icon{
     background: #c03a2a;
 }
 .frame-color-e{
     display: block;
     background: #f1c40f;
 }
-.frame-color-e > .frame_icon{
+.frame-color-e > .frame_head > .frame_icon{
     background: #f49c14;
 }
 .frame-color-f{
     display: block;
     background: #905ba1;
 }
-.frame-color-f > .frame_icon{
+.frame-color-f > .frame_head > .frame_icon{
     background: #7f4996;
 }
-.frame > .frame_text{
+.frame > .frame_head{
+    position: relative;
+    color: #fff;
+    height: 60px;
+}
+.frame > .frame_head > .frame_text{
     padding: 10px;    
 }
-.frame > .frame_text > p{
+.frame > .frame_head > .frame_text > p{
     margin-bottom: 0;
 }
-.frame > .frame_text > p:first-child{
+.frame > .frame_head > .frame_text > p:first-child{
     font-weight: bold;
 }
-.frame > .frame_icon{
+.frame > .frame_head > .frame_icon{
     position: absolute;
     right: 0;
     top: 0;
@@ -231,4 +233,53 @@ header{
     vertical-align: middle;
     font-size: 38px;
     width: 80px;
+}
+.frame > .frame_content{
+    background: #fff;
+    color: #171f2a;
+    border:1px solid #a9d6fc;
+    border-top: none;
+}
+.frame > .frame_content > ul{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.frame > .frame_content > ul:before{
+    position: absolute;
+    content: "";
+    width: 2px;
+    background: rgba(0, 129, 255, 0.3);
+    left: 9px;
+    top: 10px;
+    bottom: 10px;
+}
+.frame > .frame_content > ul > li{
+    padding-left: 20px;
+}
+.frame > .frame_content > ul > li:before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #0081ff;
+    margin-top: 4px;
+    left: 5px;
+
+}
+#me{
+    display: block;
+}
+.title{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+@media screen and (max-width: 768px){
+    .options{
+        position: relative;
+    }
 }
