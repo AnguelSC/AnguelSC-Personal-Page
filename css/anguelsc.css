@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?29ba2j');
-  src:  url('../fonts/icomoon.eot?29ba2j#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?29ba2j') format('truetype'),
-    url('../fonts/icomoon.woff?29ba2j') format('woff'),
-    url('../fonts/icomoon.svg?29ba2j#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?x0jl30');
+  src:  url('../fonts/icomoon.eot?x0jl30#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?x0jl30') format('truetype'),
+    url('../fonts/icomoon.woff?x0jl30') format('woff'),
+    url('../fonts/icomoon.svg?x0jl30#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-left:before {
+  content: "\e90c";
+}
+.icon-right:before {
+  content: "\e90d";
+}
 .icon-education_menu:before {
   content: "\e902";
 }
@@ -88,6 +94,7 @@ header{
     display: block;
     text-align: center;
 }
+.header_options > .header_options_list > div,
 .header_options > .header_options_list > a{
     vertical-align: top;
     margin: 0 auto;
@@ -98,6 +105,13 @@ header{
     font-weight: bold;
     text-decoration: none;
     position: relative;
+}
+
+.header_options > .header_options_list > div > i{
+    height: 50px;
+    line-height: 50px;
+    color: #0081ff;
+    font-weight: bold;
 }
 .header_options > .header_options_list > a:hover{
     color: #0081ff;
@@ -281,5 +295,25 @@ header{
 @media screen and (max-width: 768px){
     .options{
         position: relative;
+    }
+    
+    .header_options{
+        text-align: left;
+    }
+    .header_options > .header_options_list > a{
+        display: none;
+    }
+    .header_options > .header_options_list > div{
+        position: absolute;
+        top: 0;
+    }
+    .header_options > .header_options_list > #header_left{
+        left: 0 !important;
+    }
+    .header_options > .header_options_list > #header_right{
+        right: 0 !important;
+    }
+    .header_options > .header_options_list > a.active{
+        display: block;
     }
 }
