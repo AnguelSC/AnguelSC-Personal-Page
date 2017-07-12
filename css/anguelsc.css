@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?5eq5z5');
-  src:  url('../fonts/icomoon.eot?5eq5z5#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?5eq5z5') format('truetype'),
-    url('../fonts/icomoon.woff?5eq5z5') format('woff'),
-    url('../fonts/icomoon.svg?5eq5z5#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?29ba2j');
+  src:  url('../fonts/icomoon.eot?29ba2j#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?29ba2j') format('truetype'),
+    url('../fonts/icomoon.woff?29ba2j') format('woff'),
+    url('../fonts/icomoon.svg?29ba2j#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,8 +25,41 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-education_menu:before {
+  content: "\e902";
+}
+.icon-achie_menu:before {
+  content: "\e903";
+}
+.icon-skills_menu:before {
+  content: "\e904";
+}
+.icon-experience_menu:before {
+  content: "\e905";
+}
+.icon-services_menu:before {
+  content: "\e906";
+}
 .icon-about:before {
   content: "\e900";
+}
+.icon-seo:before {
+  content: "\e907";
+}
+.icon-services:before {
+  content: "\e908";
+}
+.icon-illustration:before {
+  content: "\e909";
+}
+.icon-mobile:before {
+  content: "\e90a";
+}
+.icon-developer:before {
+  content: "\e90b";
+}
+.icon-design:before {
+  content: "\e901";
 }
 
 body{
@@ -129,4 +162,73 @@ header{
     font-size: 12px;
     padding: 5px 15px;
     border-radius: 20px;
+}
+.frame{
+    display: block;
+    position: relative;
+    color: #fff;
+    height: 60px;
+    margin-bottom: 15px;
+}
+.frame-color-a{
+    display: block;
+    background: #52b36e;
+}
+.frame-color-a > .frame_icon{
+    background: #2EAB61;
+}
+.frame-color-b{
+    display: block;
+    background: #35495e;
+}
+.frame-color-b > .frame_icon{
+    background: #2c3e50;
+}
+.frame-color-c{
+    display: block;
+    background: #3997d3;
+}
+.frame-color-c > .frame_icon{
+    background: #2880ba;
+}
+.frame-color-d{
+    display: block;
+    background: #e84c3c;
+}
+.frame-color-d > .frame_icon{
+    background: #c03a2a;
+}
+.frame-color-e{
+    display: block;
+    background: #f1c40f;
+}
+.frame-color-e > .frame_icon{
+    background: #f49c14;
+}
+.frame-color-f{
+    display: block;
+    background: #905ba1;
+}
+.frame-color-f > .frame_icon{
+    background: #7f4996;
+}
+.frame > .frame_text{
+    padding: 10px;    
+}
+.frame > .frame_text > p{
+    margin-bottom: 0;
+}
+.frame > .frame_text > p:first-child{
+    font-weight: bold;
+}
+.frame > .frame_icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 38px;
+    width: 80px;
 }
