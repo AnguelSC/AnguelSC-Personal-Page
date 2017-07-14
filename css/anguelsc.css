@@ -94,8 +94,10 @@ header{
     display: block;
     text-align: center;
 }
-.header_options > .header_options_list > div,
+.header_options > .header_options_list > #header_left,
+.header_options > .header_options_list > #header_right,
 .header_options > .header_options_list > a{
+    min-width: 80px;
     vertical-align: top;
     margin: 0 auto;
     display: inline-block;
@@ -106,8 +108,11 @@ header{
     text-decoration: none;
     position: relative;
 }
-
-.header_options > .header_options_list > div > i{
+.header_options > .header_options_list > #header_left,
+.header_options > .header_options_list > #header_right{
+    z-index: 9;
+}
+.header_options > .header_options_list > div > a > i{
     height: 50px;
     line-height: 50px;
     color: #0081ff;
@@ -115,6 +120,9 @@ header{
 }
 .header_options > .header_options_list > a:hover{
     color: #0081ff;
+}
+.header_options > .header_options_list > a.active{
+    min-width: 120px;
 }
 .header_options > .header_options_list > a.active > i{
     position: absolute;
