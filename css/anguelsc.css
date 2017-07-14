@@ -110,7 +110,14 @@ header{
 }
 .header_options > .header_options_list > #header_left,
 .header_options > .header_options_list > #header_right{
-    z-index: 9;
+    z-index: 999;
+    
+}
+.header_options > .header_options_list > #header_left:hover,
+.header_options > .header_options_list > #header_right:hover{
+    background:#0081ff;
+    text-align: center;
+    
 }
 .header_options > .header_options_list > div > a > i{
     height: 50px;
@@ -410,7 +417,7 @@ header{
         display: none;
     }
     .header_options > .header_options_list > div{
-        position: absolute;
+        position: absolute !important;
         top: 0;
     }
     .header_options > .header_options_list > #header_left{
